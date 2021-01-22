@@ -1,0 +1,43 @@
+﻿*::selection{
+    background: crimson;
+    color: #fff;
+}
+
+/*Navbar CSS*/
+.navbar {
+    background: #be95c4;
+}
+
+.nav-link :hover{
+    color: black;
+}
+/*End of Navbar CSS*/
+
+
+/*Footer CSS*/
+.footerlinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+    .footerlinks:hover {
+        color: #f3c4fb;
+    }
+
+.copyright {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+    .copyright:hover {
+        color: black;
+    }
+
+#footer1 {
+    background: #5e548e;
+}
+
+#footer2 {
+    background: #be95c4;
+}
+/*End of Footer CSS*/
