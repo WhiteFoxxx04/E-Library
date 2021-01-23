@@ -33,12 +33,12 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
     height: 615px;
 }
-.card {
+.card-login-bg{
     border-radius: 3%;
     margin-top: 100px;
     background-color: #cfcece4d;
 }
-.label{
+label{
     color: #fff;
 }
 .btn{
@@ -61,14 +61,31 @@
 
 /*End of Login CSS*/
 
-    /*Other CSS */
-    /*.text-justify{
+/*Signup CSS*/
+.card-signup-bg {
+    border-radius: 3%;
+    margin-top: 100px;
+    background-color: #cfcece4d;
+    margin-bottom: 20%;
+    margin-top: 10px;
+}
+
+.signup-image{
+    width: 80px;
+}
+.bg-signup-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
+}
+/*End of Signup CSS*/
+
+/*Other CSS */
+/*.text-justify{
     text-align: justify;
 }*/
-    /*End of Other CSS*/
+/*End of Other CSS*/
 
-    /*Footer CSS*/
-    .footerlinks {
+/*Footer CSS*/
+.footerlinks {
     color: #ffffff;
     text-decoration: none !important;
 }
