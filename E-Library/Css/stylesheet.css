@@ -23,8 +23,52 @@
     width: 150px;
 }
 /*End of Homepage CSS*/
-/*Footer CSS*/
-.footerlinks {
+
+/*Login CSS*/
+.login-image {
+    width: 100px;
+}
+.bg-image {
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
+    height: 615px;
+}
+.card {
+    border-radius: 3%;
+    margin-top: 100px;
+    background-color: #cfcece4d;
+}
+.label{
+    color: #fff;
+}
+.btn{
+    margin-top: 5px;
+}
+.back-to-homepage {
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none !important;
+    margin-top: 5px;
+}
+
+    .back-to-homepage:hover {
+        margin-right: 1rem;
+        transition: margin-right .3s;
+        color: #f3c4fb;
+    }
+
+/*End of Login CSS*/
+
+    /*Other CSS */
+    /*.text-justify{
+    text-align: justify;
+}*/
+    /*End of Other CSS*/
+
+    /*Footer CSS*/
+    .footerlinks {
     color: #ffffff;
     text-decoration: none !important;
 }

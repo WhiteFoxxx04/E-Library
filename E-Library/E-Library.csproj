@@ -1723,15 +1723,19 @@
     <Content Include="FontAwesome_Icons\webfonts\fa-regular-400.svg" />
     <Content Include="FontAwesome_Icons\webfonts\fa-solid-900.svg" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Images\background-login.jpg" />
     <Content Include="Images\books.png" />
     <Content Include="Images\books1.png" />
     <Content Include="Images\defaulters-list.png" />
     <Content Include="Images\digital-inventory.png" />
+    <Content Include="Images\generaluser.png" />
     <Content Include="Images\home-bg.jpg" />
     <Content Include="Images\in-homepage-banner.jpg" />
     <Content Include="Images\library.png" />
+    <Content Include="Images\Panel.png" />
     <Content Include="Images\search-online.png" />
     <Content Include="Images\sign-up.png" />
+    <Content Include="LoginPage.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -1749,6 +1753,13 @@
     </Compile>
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
