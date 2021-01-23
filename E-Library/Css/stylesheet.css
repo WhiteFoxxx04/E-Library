@@ -11,9 +11,18 @@
 .nav-link :hover{
     color: black;
 }
+
+.logo{
+    height: 30px;
+    width: 30px;
+}
 /*End of Navbar CSS*/
 
-
+/* Homepage CSS */
+.homepage-images{
+    width: 150px;
+}
+/*End of Homepage CSS*/
 /*Footer CSS*/
 .footerlinks {
     color: #ffffff;
