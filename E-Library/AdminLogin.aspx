@@ -6,12 +6,12 @@
     <div class="container">
       <div class="row">
          <div class="col-md-6 mx-auto">
-            <div class="card">
+            <div class="card card-admin-login-bg ">
                <div class="card-body">
                   <div class="row">
                      <div class="col">
                         <center>
-                           <img class="login-image" src="Images/adminuser.png"/>
+                           <img class="admin-login-image" src="Images/adminuser.png"/>
                         </center>
                      </div>
                   </div>
@@ -30,11 +30,11 @@
                   <div class="row">
                      <div class="col"> 
                         <asp:Label ID="lblAdminId" class="label" runat="server" Text="Admin ID"></asp:Label>
-                        <div class="form-control">
-                           <asp:TextBox CssClass="form-control" ID="txtMemberID" runat="server" placeholder="Member ID"></asp:TextBox>
+                        <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="txtMemberID" runat="server" placeholder="Admin Id"></asp:TextBox>
                         </div>
                         <asp:Label ID="lblPassword" class="label" runat="server" Text="Password"></asp:Label>                        
-                        <div class="form-control">
+                        <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
                         <div class="form-group">

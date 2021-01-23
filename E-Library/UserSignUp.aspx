@@ -20,7 +20,7 @@
                         <center>
                            <h4>Your Profile</h4>
                            <span>Account Status - </span>
-                           <asp:Label class="badge badge-pill badge-info" ID="lblAcctStatus" runat="server" Text="Your status"></asp:Label>
+                           <asp:Label class="badge badge-pill badge-info label" ID="lblAcctStatus" runat="server" Text="Your status"></asp:Label>
                         </center>
                      </div>
                   </div>
@@ -31,13 +31,13 @@
                   </div>
                   <div class="row">
                      <div class="col-md-6">
-                        <label>Full Name</label>
+                        <label class="label">Full Name</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtFullName" runat="server" placeholder="Full Name"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-6">
-                        <label>Date of Birth</label>
+                        <label class="label">Date of Birth</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Date"></asp:TextBox>
                         </div>
@@ -45,13 +45,13 @@
                   </div>
                   <div class="row">
                      <div class="col-md-6">
-                        <label>Contact No</label>
+                        <label class="label">Contact No</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtContactNumber" runat="server" placeholder="000-000-0000" TextMode="Number"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-6">
-                        <label>Email ID</label>
+                        <label class="label">Email ID</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" placeholder="abc@gmail.com" TextMode="Email"></asp:TextBox>
                         </div>
@@ -59,7 +59,7 @@
                   </div>
                   <div class="row">
                      <div class="col-md-4">
-                        <label>State</label>
+                        <label class="label">State</label>
                         <div class="form-group">
                            <asp:DropDownList class="form-control" ID="ddlState" runat="server">
                               <asp:ListItem Text="Select-State" Value="select" />
@@ -97,13 +97,13 @@
                         </div>
                      </div>
                      <div class="col-md-4">
-                        <label>City</label>
+                        <label class="label">City</label>
                         <div class="form-group">
                            <asp:TextBox class="form-control" ID="txtCity" runat="server" placeholder="City"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
-                        <label>Pincode</label>
+                        <label class="label">Pincode</label>
                         <div class="form-group">
                            <asp:TextBox class="form-control" ID="txtZipcode" runat="server" placeholder="000-000" TextMode="Number"></asp:TextBox>
                         </div>
@@ -111,7 +111,7 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <label>Full Address</label>
+                        <label class="label">Full Address</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtAddress" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2"></asp:TextBox>
                         </div>
@@ -126,26 +126,26 @@
                   </div>
                   <div class="row">
                      <div class="col-md-4">
-                        <label>User ID</label>
+                        <label class="label">User ID</label>
                         <div class="form-group">
                            <asp:TextBox class="form-control" ID="txtUserID" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
-                        <label>Old Password</label>
+                        <label class="label">Old Password</label>
                         <div class="form-group">
                            <asp:TextBox class="form-control" ID="txtOldPassword" runat="server" placeholder="Old Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
-                        <label>New Password</label>
+                        <label class="label">New Password</label>
                         <div class="form-group">
                            <asp:TextBox class="form-control" ID="txtNewPassword" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
                         </div>
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-8 mx-auto">
+                     <div class="col-4 mx-auto">
                         <center>
                            <div class="form-group">
                               <asp:Button class="btn btn-primary btn-block btn-lg" ID="btnUpdate" runat="server" Text="Update" />

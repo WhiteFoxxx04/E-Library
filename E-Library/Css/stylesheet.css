@@ -3,6 +3,12 @@
     color: #fff;
 }
 
+a:link,
+a:visited {
+    /*color: inherit;*/
+    text-decoration: none;
+}
+
 /*Navbar CSS*/
 .navbar {
     background: #be95c4;
@@ -33,16 +39,16 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
     height: 615px;
 }
-.card-login-bg{
+.card-login-bg {
     border-radius: 3%;
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: #cfcece4d;
 }
-label{
+.label{
     color: #fff;
 }
-.btn{
-    margin-top: 5px;
+.btn-signup{
+    margin-top:4px;
 }
 .back-to-homepage {
     display: inline-block;
@@ -58,8 +64,21 @@ label{
         transition: margin-right .3s;
         color: #f3c4fb;
     }
-
 /*End of Login CSS*/
+
+/*Admin CSS*/
+.admin-login-image {
+    width: 100px;
+}
+.card-admin-login-bg {
+    border-radius: 3%;
+    margin-top: 75px;
+    background-color: #cfcece4d;
+}
+.label{
+    color: #fff;
+}
+/*End of Admin CSS*/
 
 /*Signup CSS*/
 .card-signup-bg {

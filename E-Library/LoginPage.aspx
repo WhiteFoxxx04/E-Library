@@ -30,16 +30,16 @@
                   <div class="row">
                      <div class="col"> 
                         <asp:Label ID="lblMemberId" class="label" runat="server" Text="Member ID"></asp:Label>
-                        <div class="form-control">
+                        <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtMemberID" runat="server" placeholder="Member ID"></asp:TextBox>
                         </div>
                         <asp:Label ID="lblPassword" class="label" runat="server" Text="Password"></asp:Label>                        
-                        <div class="form-control">
+                        <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                           <asp:Button class="btn btn-success btn-block btn-lg " ID="btnLogin" runat="server" Text="Login"/>
-                           &nbsp;<a href="usersignup.aspx"><input class="btn btn-info btn-block btn-lg" id="btnSignup" type="button" value="Sign Up" /></a></div>
+                           <asp:Button class="btn btn-success btn-block btn-lg" ID="btnLogin" runat="server" Text="Login"/>
+                           <a href="usersignup.aspx"><input class="btn btn-info btn-block btn-lg btn-signup" id="btnSignup" type="button" value="Sign Up" /></a></div>
                      </div>
                   </div>
                </div>
