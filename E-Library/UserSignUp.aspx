@@ -121,7 +121,7 @@
                      <div class="col-md-6">
                         <label class="badge badge-secondary badge-info">User ID</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="txtUserID" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="txtUserID" runat="server" placeholder="User ID"></asp:TextBox>
                         </div>
                      </div>
                       <div class="col-md-6">
@@ -135,7 +135,7 @@
                      <div class="col-4 mx-auto">
                         <center>
                            <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="btnUpdate" runat="server" Text="Update" />
+                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="btnSignUp" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
                            </div>
                         </center>
                      </div>
