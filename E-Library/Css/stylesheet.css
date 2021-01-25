@@ -34,11 +34,15 @@ a:visited {
 .login-image,
 .admin-login-image,
 .author-image,
-.publisher-image {
+.publisher-image,
+.book-issuing-image,
+.member-management-image{
     width: 100px;
 }
+
 .bg-image,
-.author-bg{
+.author-bg,
+.book-issuing-bg {
     background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
     height: 615px;
@@ -48,6 +52,14 @@ a:visited {
     margin-top: 50px;
     background-color: #cfcece4d;
 }
+
+.card-membermgmt-bg {
+    border-radius: 3%;
+    margin-top: 50px;
+    background-color: #cfcece4d;
+    margin-bottom: 10%;
+}
+
 .label{
     color: #fff;
 }
@@ -71,9 +83,6 @@ a:visited {
 /*End of Login CSS*/
 
 /*Admin CSS*/
-. {
-    width: 100px;
-}
 .badge-secondary{
     background-color:#cfcece4d;
     color: black;
@@ -101,7 +110,8 @@ a:visited {
 .signup-image{
     width: 80px;
 }
-.bg-signup-image {
+.bg-signup-image,
+.member-management-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
 }
 /*End of Signup CSS*/

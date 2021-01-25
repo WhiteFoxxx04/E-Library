@@ -5,7 +5,7 @@
 <div class="bg-image">
     <div class="container">
       <div class="row">
-         <div class="col-md-6 mx-auto">
+         <div class="col-md-5 mx-auto">
             <div class="card card-admin-login-bg ">
                <div class="card-body">
                   <div class="row">

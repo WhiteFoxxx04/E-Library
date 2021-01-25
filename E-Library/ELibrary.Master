@@ -100,11 +100,15 @@
                             <%--<asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>--%>
                             <a class="footerlinks" href="publishermanagement.aspx">Publisher Management</a>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
+                            <%--<asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>--%>
+                            <a class="footerlinks" href="bookinventorypage.aspx">Book Inventory</a>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
+                            <%--<asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>--%>
+                            <a class="footerlinks" href="bookissuingpage.aspx">Book Issuing</a>
                             &nbsp;
-                             <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>
+                             <%--<asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>--%>
+                            <a class="footerlinks" href="membermanagementpage.aspx">Member Management</a>
+
                         </p>
  
                     </div>
