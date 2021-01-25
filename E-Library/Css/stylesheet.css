@@ -36,7 +36,8 @@ a:visited {
 .author-image,
 .publisher-image,
 .book-issuing-image,
-.member-management-image{
+.member-management-image,
+.book-inventory-image {
     width: 100px;
 }
 
@@ -53,7 +54,8 @@ a:visited {
     background-color: #cfcece4d;
 }
 
-.card-membermgmt-bg {
+.card-membermgmt-bg,
+.card-bookinventory-bg{
     border-radius: 3%;
     margin-top: 50px;
     background-color: #cfcece4d;
@@ -111,7 +113,8 @@ a:visited {
     width: 80px;
 }
 .bg-signup-image,
-.member-management-bg {
+.member-management-bg,
+.book-inventory-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
 }
 /*End of Signup CSS*/

@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
     <Content Include="AuthorManagement.aspx" />
+    <Content Include="BookInventoryPage.aspx" />
     <Content Include="BookIssuingPage.aspx" />
     <Content Include="Bootstrap\CSS\bootstrap.min.css" />
     <Content Include="Bootstrap\JS\bootstrap.min.js" />
@@ -1764,6 +1765,13 @@
     </Compile>
     <Compile Include="AuthorManagement.aspx.designer.cs">
       <DependentUpon>AuthorManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookInventoryPage.aspx.cs">
+      <DependentUpon>BookInventoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookInventoryPage.aspx.designer.cs">
+      <DependentUpon>BookInventoryPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="BookIssuingPage.aspx.cs">
       <DependentUpon>BookIssuingPage.aspx</DependentUpon>
