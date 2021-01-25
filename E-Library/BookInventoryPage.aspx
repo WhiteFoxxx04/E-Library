@@ -170,7 +170,7 @@
                         <asp:Button ID="btnAdd" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" />
                      </div>
                      <div class="col-4">
-                        <asp:Button ID="btnUpdate" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" />
+                        <asp:Button ID="btnUpdate" class="btn btn-lg btn-block btn-primary" runat="server" Text="Update" />
                      </div>
                      <div class="col-4">
                         <asp:Button ID="btnDelete" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
