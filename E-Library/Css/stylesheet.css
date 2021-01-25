@@ -70,6 +70,10 @@ a:visited {
 .admin-login-image {
     width: 100px;
 }
+.badge-secondary{
+    background-color:#cfcece4d;
+    color: black;
+}
 .card-admin-login-bg {
     border-radius: 3%;
     margin-top: 75px;

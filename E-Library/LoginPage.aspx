@@ -18,7 +18,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h3 style="color:#fff">Member Login</h3>
+                           <h3>Member Login</h3>
                         </center>
                      </div>
                   </div>
@@ -29,11 +29,11 @@
                   </div>
                   <div class="row">
                      <div class="col"> 
-                        <asp:Label ID="lblMemberId" class="label" runat="server" Text="Member ID"></asp:Label>
+                        <asp:Label ID="lblMemberId" class="badge badge-secondary badge-info" runat="server" Text="Member ID"></asp:Label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtMemberID" runat="server" placeholder="Member ID"></asp:TextBox>
                         </div>
-                        <asp:Label ID="lblPassword" class="label" runat="server" Text="Password"></asp:Label>                        
+                        <asp:Label ID="lblPassword" class="badge badge-secondary badge-info" runat="server" Text="Password"></asp:Label>                        
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>

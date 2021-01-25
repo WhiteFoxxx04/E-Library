@@ -71,7 +71,8 @@
                         </li>
  
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server">Hello user</asp:LinkButton>
+                            <%--<asp:LinkButton class="nav-link" ID="LinkButton7" runat="server">Hello user</asp:LinkButton>--%>
+                            <a class="nav-link" href="userprofile.aspx">Hello user</a>
                         </li>
                     </ul>
                     </div>

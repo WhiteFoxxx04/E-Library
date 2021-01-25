@@ -1,25 +1,32 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ELibrary.Master" AutoEventWireup="true" CodeBehind="UserSignUp.aspx.cs" Inherits="E_Library.UserSignUp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ELibrary.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="E_Library.UserProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="bg-signup-image">
+    <div class="bg-signup-image">
     <div class="container-fluid">
       <div class="row">
-         <div class="col-md-6 mx-auto">
+         <div class="col-md-5">
             <div class="card card-signup-bg">
                <div class="card-body">
                   <div class="row">
                      <div class="col">
                         <center>
-                           <img class="signup-image" src="Images/generaluser.png"/>
+                            <img class="signup-image" src="Images/generaluser.png"/>
                         </center>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>User Registration</h4>
+                           <h4>User Profile</h4>
+                           <span>Account Status - </span>
+                           <asp:Label class="badge badge-pill badge-info" ID="lblAcctStatus" runat="server" Text="User status"></asp:Label>
                         </center>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <hr>
                      </div>
                   </div>
                   <div class="row">
@@ -32,7 +39,7 @@
                      <div class="col-md-6">
                         <label class="badge badge-secondary badge-info">Date of Birth</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="txtDOB" runat="server" placeholder="Password" TextMode="Date"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txtDateOfBirth" runat="server" placeholder="DOB" TextMode="Date"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -40,13 +47,13 @@
                      <div class="col-md-6">
                         <label class="badge badge-secondary badge-info">Contact Number</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="txtContactNumber" runat="server" placeholder="000-000-0000" TextMode="Number"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txtContactNo" runat="server" placeholder="000-000-0000" TextMode="Number"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <label class="badge badge-secondary badge-info">Email ID</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" placeholder="abc@gmail.com" TextMode="Email"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txtEmailId" runat="server" placeholder="abc@gmail.com" TextMode="Email"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -54,7 +61,7 @@
                      <div class="col-md-4">
                         <label class="badge badge-secondary badge-info">State</label>
                         <div class="form-group">
-                           <asp:DropDownList class="form-control" ID="ddlState" runat="server">
+                           <asp:DropDownList class="form-control" ID="ddlStates" runat="server">
                               <asp:ListItem Text="Select-State" Value="select" />
                               <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh" />
                               <asp:ListItem Text="Arunachal Pradesh" Value="Arunachal Pradesh" />
@@ -98,7 +105,7 @@
                      <div class="col-md-4">
                         <label class="badge badge-secondary badge-info">Pincode</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="txtZipcode" runat="server" placeholder="000-000" TextMode="Number"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="txtPincode" runat="server" placeholder="000-000" TextMode="Number"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -106,7 +113,7 @@
                      <div class="col">
                         <label class="badge badge-secondary badge-info">Full Address</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="txtAddress" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txtFullAddress" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -118,16 +125,22 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-6">
+                     <div class="col-md-4">
                         <label class="badge badge-secondary badge-info">User ID</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="txtUserID" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="txtUserId" runat="server" placeholder="User Id" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
-                      <div class="col-md-6">
-                        <label class="badge badge-secondary badge-info">Password</label>
+                     <div class="col-md-4">
+                        <label class="badge badge-secondary badge-info">Old Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="txtOldPassword" runat="server" placeholder="Old Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <label class="badge badge-secondary badge-info">New Password</label>
+                        <div class="form-group">
+                           <asp:TextBox class="form-control" ID="txtNewPassword" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -138,6 +151,37 @@
                               <asp:Button class="btn btn-primary btn-block btn-lg" ID="btnUpdate" runat="server" Text="Update" />
                            </div>
                         </center>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-7">
+            <div class="card card-signup-bg">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col">
+                        <center>
+                           <img class="signup-image" src="Images/books1.png"/>
+                        </center>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <center>
+                           <h4>Your Issued Books</h4>
+                           <asp:Label class="badge badge-pill badge-info" ID="lblIssuedBooks" runat="server" Text="Your books info"></asp:Label>
+                        </center>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <hr>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <asp:GridView class="table table-striped table-bordered" ID="grdViewBooks" runat="server"></asp:GridView>
                      </div>
                   </div>
                </div>
