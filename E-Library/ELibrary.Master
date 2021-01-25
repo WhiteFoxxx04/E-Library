@@ -94,9 +94,11 @@
                             <%--<asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>--%>
                             <a class="footerlinks" href="adminlogin.aspx">Admin Login</a>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
+                            <%--<asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>--%>
+                            <a class="footerlinks" href="authormanagement.aspx">Author Management</a>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
+                            <%--<asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>--%>
+                            <a class="footerlinks" href="publishermanagement.aspx">Publisher Management</a>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
                             &nbsp;
