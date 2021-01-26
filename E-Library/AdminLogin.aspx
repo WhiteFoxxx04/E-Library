@@ -20,7 +20,7 @@
                         <center>
                            <h3>Admin Login</h3>
                         </center>
-                     </div>
+                     </div> 
                   </div>
                   <div class="row">
                      <div class="col">
@@ -38,14 +38,14 @@
                            <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
                         <div class="form-group">
-                           <asp:Button class="btn btn-success btn-block btn-lg " ID="btnLogin" runat="server" Text="Login"/>
+                           <asp:Button class="btn btn-success btn-block btn-lg " ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"/>
                      </div>
                   </div>
                </div>
             </div>
          </div>
         <center>
-            <a href="homepage.aspx" class="back-to-homepage"><i class="fas fa-angle-double-left"></i>Go back to homepage</a><br><br>
+            <a href="homepage.aspx" class="back-to-homepage"><i class="fas fa-angle-double-left"></i>Go back to homepage<br><br>
         </center>
       </div>
    </div>

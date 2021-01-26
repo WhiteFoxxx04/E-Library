@@ -5,7 +5,8 @@
 <html>
 <head runat="server">
     <title>E-Library</title>
-    <%-- Bootstrap css --%>
+
+     <%-- Bootstrap css --%>
     <link href="Bootstrap/CSS/bootstrap.min.css" rel="stylesheet" />
     <%-- Datatable css --%>
     <link href="Datatable_plugin/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -13,6 +14,7 @@
     <link href="FontAwesome_Icons/css/all.css" rel="stylesheet" />
     <%-- Custom Style Sheet --%>
     <link href="Css/stylesheet.css" rel="stylesheet" />
+
 
     <%-- Jquery --%>
     <script src="Bootstrap/JS/jquery-3.3.1.slim.min.js"></script>
@@ -65,11 +67,10 @@
                             <asp:LinkButton class="nav-link" ID="lnkBtnSignUp" runat="server" OnClick="lnkBtnSignUp_Click">Sign Up</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lnkBtnLogout" runat="server" OnClick="lnkBtnLogout_Click" Visible="false">Logout</asp:LinkButton>
-                        </li>
- 
-                        <li class="nav-item active">
                             <asp:LinkButton class="nav-link" ID="lnkBtnUserProfile" runat="server" OnClick="lnkBtnUserProfile_Click" Visible="false">Hello user</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="lnkBtnLogout" runat="server" OnClick="lnkBtnLogout_Click" Visible="false">Logout</asp:LinkButton>
                         </li>
                     </ul>
                     </div>

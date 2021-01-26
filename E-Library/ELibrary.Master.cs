@@ -26,7 +26,7 @@ namespace E_Library
                     lnkBtnPublisherMgmt.Visible = false; // publisher management link button
                     lnkBtnBookIssuing.Visible = false; // book issuing link button
                     lnkBtnBookInventory.Visible = false; // book inventory link button
-                    lnkBtnMemberMgmt.Visible = false; // book member management link button
+                    lnkBtnMemberMgmt.Visible = false; //  member management link button
                 }
                 else if (Session["role"].Equals("user"))
                 {
@@ -51,7 +51,7 @@ namespace E_Library
 
                     lnkBtnLogout.Visible = true; // logout link button
                     lnkBtnUserProfile.Visible = true; // hello user link button
-                    lnkBtnUserProfile.Text = "Hello Admin";
+                    lnkBtnUserProfile.Text = "Hello " + Session["username"].ToString();
 
 
                     lnkBtnAdminLogin.Visible = false; // admin login link button
@@ -59,8 +59,9 @@ namespace E_Library
                     lnkBtnPublisherMgmt.Visible = true; // publisher management link button
                     lnkBtnBookInventory.Visible = true; // book inventory link button
                     lnkBtnBookIssuing.Visible = true; // book issuing link button
+                    lnkBtnMemberMgmt.Visible = true; //  member management link button
                 }
-                }
+            }
             catch (Exception ex)
             {
             }

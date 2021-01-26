@@ -120,9 +120,9 @@ a:visited {
 /*End of Signup CSS*/
 
 /*Other CSS */
-/*.text-justify{
-    text-align: justify;
-}*/
+.content{
+    text-align: center;
+}
 /*End of Other CSS*/
 
 /*Footer CSS*/
