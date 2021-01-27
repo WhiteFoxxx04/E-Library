@@ -10,7 +10,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="author-bg">
+    <div class="background-publisher">
     <div class="container">
         <div class="row">
             <div class="col-md-5">

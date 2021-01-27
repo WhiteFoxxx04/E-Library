@@ -41,14 +41,7 @@ a:visited {
     width: 100px;
 }
 
-.bg-image,
-.author-bg,
-.book-issuing-bg {
-    /*background-size: cover;*/
-    object-fit: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
-    height: 615px;
-}
+
 .card-login-bg {
     border-radius: 3%;
     margin-top: 50px;
@@ -142,19 +135,42 @@ a:visited {
 .signup-image{
     width: 80px;
 }
-.bg-signup-image,
-.member-management-bg,
-.book-inventory-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Images/background-login.jpg) center center no-repeat;
+
+.background-admin,
+.background-login,
+.background-author,
+.background-signup,
+.background-publisher,
+.background-book-issuing,
+.background-member-management {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../Images/background-login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-book-inventory,
+.background-userprofile {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../Images/background-login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*End of Signup CSS*/
-
 /*Other CSS */
-.content{
+.content {
     text-align: center;
 }
+.lnkbtn {
+    padding: .600rem .75rem;
+}
 /*End of Other CSS*/
-
 /*Footer CSS*/
 .footerlinks {
     color: #ffffff;

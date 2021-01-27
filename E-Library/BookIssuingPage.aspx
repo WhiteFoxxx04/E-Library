@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="book-issuing-bg">
+<div class="background-book-issuing">
     <div class="container-fluid">
       <div class="row">
          <div class="col-md-5">

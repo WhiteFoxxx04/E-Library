@@ -4,13 +4,13 @@
         $(document).ready(function () {
             var table = $('.table').prepend($("<thead></thead>").append($(this).find("tr:first"))).DataTable({
                 pageLength: 5,
-                lengthMenu: [[5, 10, 20, -1], [5, 10, 20, 'All']],
+                lengthMenu: [[5, 10,-1], [5, 10, 'All']],
             })
         });
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="author-bg">
+    <div class="background-author">
     <div class="container">
         <div class="row">
             <div class="col-md-5">

@@ -69,13 +69,13 @@ namespace E_Library
         protected global::System.Web.UI.WebControls.LinkButton lnkBtnPending;
 
         /// <summary>
-        /// lnkBtnNotActive control.
+        /// lnkBtnInActive control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkBtnNotActive;
+        protected global::System.Web.UI.WebControls.LinkButton lnkBtnInActive;
 
         /// <summary>
         /// txtDOB control.
@@ -157,5 +157,14 @@ namespace E_Library
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdViewMemberList;
+
+        /// <summary>
+        /// Member_Master_DataSrc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Member_Master_DataSrc;
     }
 }

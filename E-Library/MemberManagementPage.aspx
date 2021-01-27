@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="member-management-bg">
+    <div class="background-member-management">
     <div class="container-fluid">
       <div class="row">
          <div class="col-md-5">
@@ -33,7 +33,7 @@
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control" ID="txtMemberId" runat="server" placeholder="ID"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-primary" ID="lnkButtonSearch" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                              <asp:LinkButton class="btn btn-primary lnkbtn" ID="lnkButtonSearch" runat="server" OnClick="lnkButtonSearch_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
                            </div>
                         </div>
                      </div>
@@ -48,9 +48,9 @@
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control mr-1" ID="txtAcctStatus" runat="server" placeholder="Status" ReadOnly="True"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-success mr-1" ID="lnkBtnActive" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
-                              <asp:LinkButton class="btn btn-warning mr-1" ID="lnkBtnPending" runat="server"><i class="far fa-pause-circle"></i></asp:LinkButton>
-                              <asp:LinkButton class="btn btn-danger mr-1" ID="lnkBtnNotActive" runat="server"><i class="fas fa-times-circle"></i></asp:LinkButton>
+                               <asp:LinkButton ID="lnkBtnActive" class="btn btn-success mr-1 lnkbtn" runat="server" OnClick="lnkBtnActive_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                               <asp:LinkButton ID="lnkBtnPending" class="btn btn-warning mr-1 lnkbtn" runat="server" OnClick="lnkBtnPending_Click"><i class="far fa-pause-circle"></i></asp:LinkButton>
+                               <asp:LinkButton ID="lnkBtnInActive" class="btn btn-danger mr-1 lnkbtn" runat="server" OnClick="lnkBtnInActive_Click"><i class="fas fa-times-circle"></i></asp:LinkButton>
                            </div>
                         </div>
                      </div>
@@ -105,7 +105,7 @@
                   </div>
                   <div class="row">
                      <div class="col-8 mx-auto">
-                        <asp:Button ID="btnDeleteUser" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete User Permanently" />
+                        <asp:Button ID="btnDeleteUser" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete User Permanently" OnClick="btnDeleteUser_Click" />
                      </div>
                   </div>
                </div>
@@ -128,7 +128,26 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="grdViewMemberList" runat="server"></asp:GridView>
+                        <asp:GridView class="table table-striped table-bordered" ID="grdViewMemberList" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="member_Id" DataSourceID="Member_Master_DataSrc">
+                            <Columns>
+                                <asp:BoundField DataField="member_Id" HeaderText="member_Id" ReadOnly="True" SortExpression="member_Id" />
+                                <asp:BoundField DataField="full_name" HeaderText="full_name" SortExpression="full_name" />
+                                <asp:BoundField DataField="contact_no" HeaderText="contact_no" SortExpression="contact_no" />
+                                <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
+                                <asp:BoundField DataField="city" HeaderText="city" SortExpression="city" />
+                                <asp:BoundField DataField="account_status" HeaderText="account_status" SortExpression="account_status" />
+                            </Columns>
+                            <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
+                            <HeaderStyle BackColor="#5e548e" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle ForeColor="#8C4510" HorizontalAlign="Center" />
+                            <RowStyle BackColor="#FFF7E7" ForeColor="#8C4510" />
+                            <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#FFF1D4" />
+                            <SortedAscendingHeaderStyle BackColor="#B95C30" />
+                            <SortedDescendingCellStyle BackColor="#F1E5CE" />
+                            <SortedDescendingHeaderStyle BackColor="#93451F" />
+                         </asp:GridView>
+                         <asp:SqlDataSource ID="Member_Master_DataSrc" runat="server" ConnectionString="Data Source=LAPTOP-F654F767\SQLEXPRESS;Initial Catalog=dbELibrary;Persist Security Info=True;User ID=Whitefox;Password=123456789" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [tblMember_Master]"></asp:SqlDataSource>
                      </div>
                   </div>
                </div>

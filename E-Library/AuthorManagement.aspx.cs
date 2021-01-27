@@ -23,7 +23,7 @@ namespace E_Library
         {
             if (checkIfAuthorExists())
             {
-                Response.Write("<script>alert('Author with this ID already Exist. You cannot add another Author with the same Author ID');</script>");
+                Response.Write("<script>alert('Author with this ID already Exist. You cannot add another Author with the same ID');</script>");
             }
             else
             {
