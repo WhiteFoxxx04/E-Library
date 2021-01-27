@@ -24,13 +24,13 @@ namespace E_Library
         protected global::System.Web.UI.WebControls.TextBox txtPublisherId;
 
         /// <summary>
-        /// btnPublisher control.
+        /// btnPublisherGo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPublisher;
+        protected global::System.Web.UI.WebControls.Button btnPublisherGo;
 
         /// <summary>
         /// txtPublisherName control.
@@ -76,5 +76,14 @@ namespace E_Library
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdViewPublisherMgmt;
+
+        /// <summary>
+        /// PublisherDataSrc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource PublisherDataSrc;
     }
 }
