@@ -13,7 +13,7 @@ namespace E_Library
         {
             try
             {
-                if (Session["role"].Equals(""))
+                if (Session["role"] == null)
                 {
                     lnkBtnUserLogin.Visible = true; //user login link button
                     lnkBtnSignUp.Visible = true; //sign up link button
@@ -28,6 +28,11 @@ namespace E_Library
                     lnkBtnBookInventory.Visible = false; // book inventory link button
                     lnkBtnMemberMgmt.Visible = false; //  member management link button
                 }
+
+                //if (Session["role"].Equals(""))
+                //{
+                    
+                //}
                 else if (Session["role"].Equals("user"))
                 {
                     lnkBtnUserLogin.Visible = false; // user login link button
