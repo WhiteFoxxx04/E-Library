@@ -13,7 +13,7 @@ namespace E_Library
         {
             try
             {
-                if (Session["role"] == null)
+                if (Session["role"].Equals(""))
                 {
                     lnkBtnUserLogin.Visible = true; //user login link button
                     lnkBtnSignUp.Visible = true; //sign up link button
@@ -55,7 +55,7 @@ namespace E_Library
                     lnkBtnSignUp.Visible = false; // sign up link button
 
                     lnkBtnLogout.Visible = true; // logout link button
-                    lnkBtnUserProfile.Visible = true; // hello user link button
+                    lnkBtnUserProfile.Visible = false; // hello user link button
                     lnkBtnUserProfile.Text = "Hello " + Session["username"].ToString();
 
 
@@ -129,7 +129,7 @@ namespace E_Library
             Session["fullname"] = "";
             Session["role"] = "";
             Session["status"] = "";
-
+            Response.Redirect("homepage.aspx");
             lnkBtnUserLogin.Visible = true; // user login link button
             lnkBtnSignUp.Visible = true; // sign up link button
 

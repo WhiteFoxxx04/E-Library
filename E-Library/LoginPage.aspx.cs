@@ -26,14 +26,18 @@ namespace E_Library
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
+
                 }
-                SqlCommand cmd = new SqlCommand("select * from tblMember_Master where member_Id ='" + txtMemberID.Text.Trim() + "' AND password = '" + txtPassword.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from tblMember_Master where member_Id='" + txtMemberID.Text.Trim() + "' AND password='" + txtPassword.Text.Trim() + "'", con);
                 SqlDataReader rdr = cmd.ExecuteReader();
                 if (rdr.HasRows)
                 {
                     while (rdr.Read())
                     {
-                        Response.Write("<script>alert('Welcome " + rdr.GetValue(1).ToString() + "');</script>");
+                        Response.Write("<script>alert('Successful login');</script>");
+                        Session["username"] = rdr.GetValue(0).ToString();
+                        Session["fullname"] = rdr.GetValue(1).ToString();
+                        Session["role"] = "user";
                     }
                     Response.Redirect("homepage.aspx");
                 }
@@ -41,8 +45,9 @@ namespace E_Library
                 {
                     Response.Write("<script>alert('Invalid credentials');</script>");
                 }
+
             }
-            catch (Exception ex)   
+            catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }

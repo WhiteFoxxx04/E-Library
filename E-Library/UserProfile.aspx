@@ -148,7 +148,7 @@
                      <div class="col-4 mx-auto">
                         <center>
                            <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="btnUpdate" runat="server" Text="Update" />
+                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
                            </div>
                         </center>
                      </div>
@@ -181,7 +181,7 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="grdViewBooks" runat="server"></asp:GridView>
+                        <asp:GridView class="table table-striped table-bordered" ID="grdViewBooks" OnRowDataBound="grdViewBooks_RowDataBound" runat="server"></asp:GridView>
                      </div>
                   </div>
                </div>
