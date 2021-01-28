@@ -85,7 +85,6 @@
                             <li class="nav-item active">
                                 <asp:LinkButton class="nav-link" ID="lnkBtnLogout" runat="server" OnClick="lnkBtnLogout_Click" Visible="false">Logout</asp:LinkButton>
                             </li>
-                                 
                         </ul>
                     </div>
                 </nav>

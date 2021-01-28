@@ -138,12 +138,12 @@
                      <div class="col">
                         <asp:GridView class="table table-striped table-bordered" ID="grdViewMemberList" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="member_Id" DataSourceID="Member_Master_DataSrc">
                             <Columns>
-                                <asp:BoundField DataField="member_Id" HeaderText="member_Id" ReadOnly="True" SortExpression="member_Id" />
-                                <asp:BoundField DataField="full_name" HeaderText="full_name" SortExpression="full_name" />
-                                <asp:BoundField DataField="contact_no" HeaderText="contact_no" SortExpression="contact_no" />
+                                <asp:BoundField DataField="member_Id" HeaderText="Member ID" ReadOnly="True" SortExpression="member_Id" />
+                                <asp:BoundField DataField="full_name" HeaderText="Full Name" SortExpression="full_name" />
+                                <%--<asp:BoundField DataField="contact_no" HeaderText="contact_no" SortExpression="contact_no" />
                                 <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
-                                <asp:BoundField DataField="city" HeaderText="city" SortExpression="city" />
-                                <asp:BoundField DataField="account_status" HeaderText="account_status" SortExpression="account_status" />
+                                <asp:BoundField DataField="city" HeaderText="city" SortExpression="city" />--%>
+                                <asp:BoundField DataField="account_status" HeaderText="Account Status" SortExpression="account_status" />
                             </Columns>
                             <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
                             <HeaderStyle BackColor="#5e548e" Font-Bold="True" ForeColor="White" />
