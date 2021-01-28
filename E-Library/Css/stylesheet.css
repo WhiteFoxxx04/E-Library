@@ -133,14 +133,11 @@ table.dataTable tbody tr {
 }
 
 .background-signup,
-.background-admin,
 .background-login,
-.background-book-issuing,
-.background-author,
-.background-publisher {
+.background-book-issuing {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../Images/background-login.jpg);
     background-position: center;
     background-size: cover;
@@ -156,6 +153,20 @@ table.dataTable tbody tr {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.background-author,
+.background-admin,
+.background-publisher {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../Images/background-login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 .background-userprofile,
 .background-member-management {

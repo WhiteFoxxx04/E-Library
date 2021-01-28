@@ -4,7 +4,7 @@
         $(document).ready(function () {
             var table = $('.table').prepend($("<thead></thead>").append($(this).find("tr:first"))).DataTable({
                 pageLength: 5,
-                lengthMenu: [[5, 10,-1], [5, 10, 'All']],
+                lengthMenu: [[5, 10, -1], [5, 10, 'All']],
             })
         });
     </script>
