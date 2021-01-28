@@ -53,11 +53,20 @@
                                 <asp:LinkButton class="nav-link" ID="lnkBtnAdminLogin" runat="server" OnClick="lnkBtnAdminLogin_Click">Admin Login</asp:LinkButton>
                             </li>
                             <li class="nav-item active">
-                                <asp:LinkButton class="footerlinks" ID="lnkBtnAuthorMgmt" runat="server" OnClick="lnkBtnAuthorMgmt_Click" Visible="false">Author Management</asp:LinkButton>
+                                <asp:LinkButton class="nav-link" ID="lnkBtnAuthorMgmt" runat="server" OnClick="lnkBtnAuthorMgmt_Click" Visible="false">Author Management</asp:LinkButton>
                             </li>
                             <li class="nav-item active">
-                                <asp:LinkButton class="footerlinks" ID="lnkBtnPublisherMgmt" runat="server" OnClick="lnkBtnPublisherMgmt_Click" Visible="false">Publisher Management</asp:LinkButton>
+                                <asp:LinkButton class="nav-link" ID="lnkBtnPublisherMgmt" runat="server" OnClick="lnkBtnPublisherMgmt_Click" Visible="false">Publisher Management</asp:LinkButton>
                             </li>
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link" ID="lnkBtnBookInventory" runat="server" OnClick="lnkBtnBookInventory_Click" Visible="false">Book Inventory</asp:LinkButton>
+                            </li>
+                             <li class="nav-item active">
+                                <asp:LinkButton class="nav-link" ID="lnkBtnBookIssuing" runat="server" OnClick="lnkBtnBookIssuing_Click" Visible="false">Book Issuing</asp:LinkButton>
+                             </li>
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link" ID="lnkBtnMemberMgmt" runat="server" OnClick="lnkBtnMemberMgmt_Click" Visible="false">Member Management</asp:LinkButton>
+                            </li>  
                         </ul>
 
                         <ul class="navbar-nav">
@@ -76,15 +85,7 @@
                             <li class="nav-item active">
                                 <asp:LinkButton class="nav-link" ID="lnkBtnLogout" runat="server" OnClick="lnkBtnLogout_Click" Visible="false">Logout</asp:LinkButton>
                             </li>
-                            <li class="nav-item active">
-                                <asp:LinkButton class="nav-link" ID="lnkBtnBookInventory" runat="server" OnClick="lnkBtnBookInventory_Click" Visible="false">Book Inventory</asp:LinkButton>
-                            </li>
-                             <li class="nav-item active">
-                                <asp:LinkButton class="nav-link" ID="lnkBtnBookIssuing" runat="server" OnClick="lnkBtnBookIssuing_Click" Visible="false">Book Issuing</asp:LinkButton>
-                             </li>
-                            <li class="nav-item active">
-                                <asp:LinkButton class="nav-link" ID="lnkBtnMemberMgmt" runat="server" OnClick="lnkBtnMemberMgmt_Click" Visible="false">Member Management</asp:LinkButton>
-                            </li>       
+                                 
                         </ul>
                     </div>
                 </nav>

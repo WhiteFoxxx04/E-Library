@@ -60,6 +60,33 @@ namespace E_Library
         protected global::System.Web.UI.WebControls.LinkButton lnkBtnPublisherMgmt;
 
         /// <summary>
+        /// lnkBtnBookInventory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkBtnBookInventory;
+
+        /// <summary>
+        /// lnkBtnBookIssuing control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkBtnBookIssuing;
+
+        /// <summary>
+        /// lnkBtnMemberMgmt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkBtnMemberMgmt;
+
+        /// <summary>
         /// lnkBtnViewBooks control.
         /// </summary>
         /// <remarks>
@@ -103,33 +130,6 @@ namespace E_Library
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkBtnLogout;
-
-        /// <summary>
-        /// lnkBtnBookInventory control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkBtnBookInventory;
-
-        /// <summary>
-        /// lnkBtnBookIssuing control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkBtnBookIssuing;
-
-        /// <summary>
-        /// lnkBtnMemberMgmt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkBtnMemberMgmt;
 
         /// <summary>
         /// ContentPlaceHolder1 control.
