@@ -120,28 +120,27 @@ namespace E_Library
                     con.Open();
 
                 }
-                SqlCommand cmd = new SqlCommand("select * from tblMember_Master where member_id='" + txtMemberId.Text.Trim() + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from tblMember_Master where member_Id='" + txtMemberId.Text.Trim() + "'", con);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        txtFullName.Text = dr.GetValue(0).ToString();
+                        txtFullName.Text = dr.GetValue(1).ToString();
                         txtAcctStatus.Text = dr.GetValue(10).ToString();
-                        txtDOB.Text = dr.GetValue(1).ToString();
-                        txtContactNo.Text = dr.GetValue(2).ToString();
-                        txtEmailId.Text = dr.GetValue(3).ToString();
-                        txtState.Text = dr.GetValue(4).ToString();
-                        txtCity.Text = dr.GetValue(5).ToString();
-                        txtPincode.Text = dr.GetValue(6).ToString();
-                        txtFullAddress.Text = dr.GetValue(7).ToString();
+                        txtDOB.Text = dr.GetValue(2).ToString();
+                        txtContactNo.Text = dr.GetValue(3).ToString();
+                        txtEmailId.Text = dr.GetValue(4).ToString();
+                        txtState.Text = dr.GetValue(5).ToString();
+                        txtCity.Text = dr.GetValue(6).ToString();
+                        txtPincode.Text = dr.GetValue(7).ToString();
+                        txtFullAddress.Text = dr.GetValue(8).ToString();
                     }
                 }
                 else
                 {
                     Response.Write("<script>alert('Invalid credentials');</script>");
                 }
-                clearForm();
             }
             catch (Exception ex)
             {
@@ -190,6 +189,7 @@ namespace E_Library
             txtPincode.Text = "";
             txtFullAddress.Text = "";
             txtAcctStatus.Text = "";
+            txtEmailId.Text = "";
         }
     }
 }

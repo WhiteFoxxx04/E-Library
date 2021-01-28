@@ -1,5 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ELibrary.Master" AutoEventWireup="true" CodeBehind="BookIssuingPage.aspx.cs" Inherits="E_Library.BookIssuingPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script>
+     $(document).ready(function () {
+            var table = $('.table').prepend($("<thead></thead>").append($(this).find("tr:first"))).DataTable({
+                pageLength: 5,
+                lengthMenu: [[5, 10,-1], [5, 10, 'All']],
+            })
+     });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <div class="background-book-issuing">
