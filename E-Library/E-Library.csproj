@@ -1749,6 +1749,7 @@
     <Content Include="PublisherManagement.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="UserSignUp.aspx" />
+    <Content Include="ViewBookModule.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -1830,6 +1831,13 @@
     </Compile>
     <Compile Include="UserSignUp.aspx.designer.cs">
       <DependentUpon>UserSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookModule.aspx.cs">
+      <DependentUpon>ViewBookModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBookModule.aspx.designer.cs">
+      <DependentUpon>ViewBookModule.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

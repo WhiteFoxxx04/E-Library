@@ -115,7 +115,7 @@ namespace E_Library
 
         protected void lnkBtnViewBooks_Click(object sender, EventArgs e)
         {
-            Response.Redirect("");
+            Response.Redirect("viewbookmodule.aspx");
         }
 
         protected void lnkBtnLogout_Click(object sender, EventArgs e)

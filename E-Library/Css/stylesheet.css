@@ -114,6 +114,10 @@ a:visited {
         border: 2px solid black;
 }
 
+table.dataTable tbody tr {
+    background-color: #ffffff0a;
+}
+
 /*for search borders*/
 .dataTables_wrapper .dataTables_filter input {
     border: 2px solid black;
