@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <div class="card card-author-bg">
+                <div class="card card-publisher-bg">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
@@ -69,7 +69,7 @@
                 <br>
             </div>
             <div class="col-md-7">
-                <div class="card card-author-bg">
+                <div class="card card-publisher-bg">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">

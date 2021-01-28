@@ -1733,6 +1733,7 @@
     <Content Include="Images\backgroundImage.jpg" />
     <Content Include="Images\books.png" />
     <Content Include="Images\books1.png" />
+    <Content Include="Images\Book_Inventory\books1.png" />
     <Content Include="Images\defaulters-list.png" />
     <Content Include="Images\digital-inventory.png" />
     <Content Include="Images\generaluser.png" />

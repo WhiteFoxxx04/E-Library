@@ -24,13 +24,13 @@ namespace E_Library
         protected global::System.Web.UI.WebControls.FileUpload flUpload;
 
         /// <summary>
-        /// txtMemberId control.
+        /// txtBookId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMemberId;
+        protected global::System.Web.UI.WebControls.TextBox txtBookId;
 
         /// <summary>
         /// lnkBtnSearch control.
@@ -78,13 +78,13 @@ namespace E_Library
         protected global::System.Web.UI.WebControls.DropDownList ddlAuthorName;
 
         /// <summary>
-        /// txtPublisherDate control.
+        /// txtPublishedDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPublisherDate;
+        protected global::System.Web.UI.WebControls.TextBox txtPublishedDate;
 
         /// <summary>
         /// lstGenre control.
@@ -193,5 +193,14 @@ namespace E_Library
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdViewBookInventory;
+
+        /// <summary>
+        /// BookInventoryDataSrc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource BookInventoryDataSrc;
     }
 }

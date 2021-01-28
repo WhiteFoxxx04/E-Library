@@ -49,7 +49,11 @@ a:visited {
 }
 
 .card-membermgmt-bg,
-.card-bookinventory-bg{
+.card-bookinventory-bg,
+.card-author-bg,
+.card-publisher-bg,
+.card-signup-bg,
+.card-bookissuing {
     border-radius: 3%;
     margin-top: 50px;
     background-color: #cfcece4d;
@@ -83,8 +87,9 @@ a:visited {
     background-color:#cfcece4d;
     color: black;
 }
-.card-admin-login-bg,
-.card-author-bg{
+
+.card-admin-login-bg
+{
     border-radius: 3%;
     margin-top: 75px;
     background-color: #cfcece4d;
@@ -124,24 +129,15 @@ a:visited {
 
 
 /*Signup CSS*/
-.card-signup-bg {
-    border-radius: 3%;
-    margin-top: 100px;
-    background-color: #cfcece4d;
-    margin-bottom: 20%;
-    margin-top: 10px;
-}
-
 .signup-image{
     width: 80px;
 }
 
 .background-admin,
 .background-login,
-.background-author,
 .background-signup,
-.background-publisher,
-.background-book-issuing{
+.background-author,
+.background-publisher{
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -152,12 +148,22 @@ a:visited {
 }
 
 .background-book-inventory,
+.background-book-issuing {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../Images/backgroundImage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .background-userprofile,
 .background-member-management {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../Images/background-login.jpg);
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../Images/backgroundAuthor.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -191,7 +191,5 @@ namespace E_Library
             txtFullAddress.Text = "";
             txtAcctStatus.Text = "";
         }
-
-
     }
 }
