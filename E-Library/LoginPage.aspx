@@ -29,11 +29,11 @@
                   </div>
                   <div class="row">
                      <div class="col"> 
-                        <asp:Label ID="lblMemberId" class="badge badge-secondary badge-info" runat="server" Text="Member ID"></asp:Label>
+                         <label class="badge badge-secondary badge-info" runat="server" >Member ID</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtMemberID" runat="server" placeholder="Member ID"></asp:TextBox>
                         </div>
-                        <asp:Label ID="lblPassword" class="badge badge-secondary badge-info" runat="server" Text="Password"></asp:Label>                        
+                         <label class="badge badge-secondary badge-info" runat="server">Password</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>

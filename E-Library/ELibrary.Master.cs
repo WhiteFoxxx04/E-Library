@@ -13,7 +13,7 @@ namespace E_Library
         {
             try
             {
-                if (Session["role"].Equals(""))
+                if (Session["role"] == null)
                 {
                     lnkBtnUserLogin.Visible = true; //user login link button
                     lnkBtnSignUp.Visible = true; //sign up link button
